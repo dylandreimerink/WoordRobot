@@ -112,7 +112,10 @@ void schrijfE(){
   voorUit(breedte);
   penOmhoog();
   draaiLinks(90);
-  voorUit(breedte); 
+  voorUit(hoogte/2); 
+  draaiLinks(90);
+  voorUit(breedte);
+  draaiRechts(90);
 }
 
 void schrijfF(){
