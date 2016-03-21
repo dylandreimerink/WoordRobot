@@ -378,5 +378,15 @@ void voorUitMetDisplay(double afstand, int getal){
   analogWrite (6, 0);
 }
 
+void zoekEindPunt(){
+ zetRecht();
+ draaLinks(90);
+ zetRecht();
+ draaiRechts(90);
+ zetRecht();
+
+ Serial.println("Staat nu op eindpunt!");
+}
+
 
 
