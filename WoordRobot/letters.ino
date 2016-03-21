@@ -91,6 +91,7 @@ void schrijfD(){
 }
 
 void schrijfE(){
+  delay(100);
   penOmhoog();
   voorUit(hoogte);
   draaiRechts(90);
@@ -281,6 +282,7 @@ void schrijfK(){
 }
 
 void schrijfL(){
+  delay(100);
   penOmhoog();
   voorUit(hoogte);
   draaiRechts(180);
