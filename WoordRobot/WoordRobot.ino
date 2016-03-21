@@ -71,55 +71,111 @@ void setup() {
 }
 
 void loop(){
-//  penOmhoog();
-//  zoekBeginPunt();
-//  voorUitMetDisplay(100, 1);
-//  penNaarBeneden();
-//  schrijfA();
-//  penOmhoog();
-//  zetRecht();
-//  draaiLinks(90);
-//  voorUit(20);
-//  draaiLinks(90);
-//  voorUit(20);
-//  zetRechtAchterUit();
-//  voorUitMetDisplay(100, 2);
-//  penNaarBeneden();
-//  schrijfP();
-//  penOmhoog();
-//  zetRecht();
-//  draaiLinks(90);
-//  voorUit(20);
-//  draaiLinks(90);
-//  voorUit(20);
-//  zetRechtAchterUit();
-//  voorUitMetDisplay(100, 2);
-//  penNaarBeneden();
-//  schrijfP();
-//  penOmhoog();
-//  zetRecht();
-//  draaiLinks(90);
-//  voorUit(20);
-//  draaiLinks(90);
-//  voorUit(20);
-//  zetRechtAchterUit();
-//  voorUitMetDisplay(100, 2);
-//  penNaarBeneden();
-//  schrijfE();
-//  penOmhoog();
-//  zetRecht();
-//  draaiLinks(90);
-//  voorUit(20);
-//  draaiLinks(90);
-//  voorUit(20);
-//  zetRechtAchterUit();
-//  voorUitMetDisplay(100, 2);
-//  penNaarBeneden();
-//  schrijfL();
-//draaiLinks(360);
-//delay(2000);
-//draaiRechts(360);
-schrijfP();
+  penOmhoog();
+  zoekBeginPunt();
+  voorUitMetDisplay(100, 1);
+  penNaarBeneden();
+  schrijfA();
+  
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(90);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 2);
+  penNaarBeneden();
+  schrijfP();
+  
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(40);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 2);
+  penNaarBeneden();
+  schrijfP();
+  
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(40);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 2);
+  penNaarBeneden();
+  schrijfE();
+  
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(40);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 2);
+  penNaarBeneden();
+  schrijfL();
+/*  
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(40);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 2);
+  penNaarBeneden();
+  schrijfT();
+  
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(40);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 2);
+  penNaarBeneden();
+  schrijfA();
+
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(40);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 2);
+  penNaarBeneden();
+  schrijfA();
+
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(40);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 2);
+  penNaarBeneden();
+  schrijfR();
+
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(40);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 2);
+  penNaarBeneden();
+  schrijfT);
+  */  
   delay(1000000);
 
 }
