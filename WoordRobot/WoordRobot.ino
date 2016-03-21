@@ -4,7 +4,7 @@
 const double pi = 3.14159265359;
 const double tijdEenRondjeMaxSnelheid = 2000; //miliseconden    dit getal is nog niet goed!
 const double diameterWiel = 30.4; //mm
-const double afstandStiftWiel = 65; //mm                        dit getal is nog niet goed!
+const double afstandStiftWiel = 69.3; //mm                        dit getal is nog niet goed!
 const double hoogteLetters = 100; //mm
 const double breedteLetters = 50; //mm
 const double afwijkingRechts = 67.8;
@@ -71,51 +71,55 @@ void setup() {
 }
 
 void loop(){
-  penOmhoog();
-  zoekBeginPunt();
-  voorUitMetDisplay(100, 1);
-  penNaarBeneden();
-  schrijfA();
-  penOmhoog();
-  zetRecht();
-  draaiLinks(90);
-  voorUit(20);
-  draaiLinks(90);
-  voorUit(20);
-  zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
-  penNaarBeneden();
-  schrijfP();
-  penOmhoog();
-  zetRecht();
-  draaiLinks(90);
-  voorUit(20);
-  draaiLinks(90);
-  voorUit(20);
-  zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
-  penNaarBeneden();
-  schrijfP();
-  penOmhoog();
-  zetRecht();
-  draaiLinks(90);
-  voorUit(20);
-  draaiLinks(90);
-  voorUit(20);
-  zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
-  penNaarBeneden();
-  schrijfE();
-  penOmhoog();
-  zetRecht();
-  draaiLinks(90);
-  voorUit(20);
-  draaiLinks(90);
-  voorUit(20);
-  zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
-  penNaarBeneden();
-  schrijfL();
+//  penOmhoog();
+//  zoekBeginPunt();
+//  voorUitMetDisplay(100, 1);
+//  penNaarBeneden();
+//  schrijfA();
+//  penOmhoog();
+//  zetRecht();
+//  draaiLinks(90);
+//  voorUit(20);
+//  draaiLinks(90);
+//  voorUit(20);
+//  zetRechtAchterUit();
+//  voorUitMetDisplay(100, 2);
+//  penNaarBeneden();
+//  schrijfP();
+//  penOmhoog();
+//  zetRecht();
+//  draaiLinks(90);
+//  voorUit(20);
+//  draaiLinks(90);
+//  voorUit(20);
+//  zetRechtAchterUit();
+//  voorUitMetDisplay(100, 2);
+//  penNaarBeneden();
+//  schrijfP();
+//  penOmhoog();
+//  zetRecht();
+//  draaiLinks(90);
+//  voorUit(20);
+//  draaiLinks(90);
+//  voorUit(20);
+//  zetRechtAchterUit();
+//  voorUitMetDisplay(100, 2);
+//  penNaarBeneden();
+//  schrijfE();
+//  penOmhoog();
+//  zetRecht();
+//  draaiLinks(90);
+//  voorUit(20);
+//  draaiLinks(90);
+//  voorUit(20);
+//  zetRechtAchterUit();
+//  voorUitMetDisplay(100, 2);
+//  penNaarBeneden();
+//  schrijfL();
+//draaiLinks(360);
+//delay(2000);
+//draaiRechts(360);
+schrijfP();
   delay(1000000);
 
 }
