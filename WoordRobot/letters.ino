@@ -18,9 +18,7 @@ void schrijfA(){
     draaiRechts(180);
     voorUit(breedte / 2);
     draaiRechts(90);
-    voorUit(hoogte / 2);
-    draaiLinks(90);
-    voorUit(breedte / 2);    
+    voorUit(hoogte / 2);  
 }
 
 void schrijfB(){
