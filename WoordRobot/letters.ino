@@ -369,11 +369,11 @@ void schrijfP(){
   voorUit(bD);
   draaiRechts(45);
   voorUit(afstand);
-  draaiRechts(135);
+  draaiRechts(45);
   voorUit(h);
   draaiRechts(45);
   voorUit(afstand);
-  draaiRechts(135);
+  draaiRechts(45);
   voorUit(bD);
   penOmhoog();
   achterUit(breedte);
