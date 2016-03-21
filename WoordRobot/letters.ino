@@ -112,10 +112,17 @@ void schrijfE(){
   voorUit(breedte);
   penOmhoog();
   draaiLinks(90);
+<<<<<<< HEAD
   voorUit(hoogte/2); 
   draaiLinks(90);
   voorUit(breedte);
   draaiRechts(90);
+=======
+  voorUit(breedte);
+  draaiRechts(90);
+  voorUit(breedte);
+  draaiRechts(90); 
+>>>>>>> f717112dc4da53a362d852df4151f44ff3d42b1c
 }
 
 void schrijfF(){
@@ -360,23 +367,26 @@ voorUit(StraalCirkel);
 }
 
 void schrijfP(){
+  double b = breedte/4;
+  double bD = b*3;
+  double h = hoogte/4;
+  double afstand = sqrt(h*h+b);
   voorUit(hoogte);
   draaiRechts(90);
-  int omtrekHalveCirkel = ((hoogte/2) * pi)/2;
-  int diameterHalveCirkel = hoogte/2;
-  int lengteBocht = omtrekHalveCirkel / 10;
-
-  for(int i = 0; i < 11; i++){
-    draaiRechts(18);
-    voorUit(lengteBocht);
-  }
-
+  voorUit(bD);
+  draaiRechts(45);
+  voorUit(afstand);
+  draaiRechts(135);
+  voorUit(h);
+  draaiRechts(45);
+  voorUit(afstand);
+  draaiRechts(135);
+  voorUit(bD);
   penOmhoog();
+  achterUit(breedte);
   draaiLinks(90);
-  voorUit(hoogte/2);
-  draaiLinks(90);
-  voorUit(breedte);
-  draaiRechts(90);
+  voorUit(h);
+  
 }
 
 
