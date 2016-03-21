@@ -1,0 +1,85 @@
+//Letters Mike (D, K, P, V)
+
+void schrijfD(){
+  voorUit(hoogte);
+  draaiRechts(90);
+  int omtrekHalveCirkel = ((hoogte * pi)/2;
+  int lengteBocht = omtrekHalveCirkel / 10;
+
+  for(int i = 0; i < 11; i++){
+    draaiRechts(18);
+    voorUit(lengteBocht);
+  }
+
+  penOmhoog();
+  draaiRechts(180);
+  voorUit(breedte);
+}
+
+void schrijfK(){
+  vooruit(hoogte);
+  penOmhoog();
+  draaiRechts(180);
+  voorUit(hoogte);
+  draaiLinks(90);
+  voorUit(breedte);
+  draaiRechts(180);
+  penNaarBedneden();
+
+  double b = hoogte / 2;
+  double h = sqrt(breedte * breedte + (b * b));
+  double hoek = 90 - asin(breedte / h) / pi * 180
+  draaiRechts(hoek);
+  voorUit(h);
+  hoek = 180 - (asin(b / h) / pi * 180 * 2);
+  draaiRechts(hoek);
+  voorUit(h);
+  penOmhoog();
+  draaiRechts(180);
+  voorUit(h);
+  hoek = asin(hoogte / h) / pi * 180;
+  draaiLinks(hoek);
+  voorUit(hoogte / 2);
+  draaiLinks(90);
+  voorUit(breedte);
+}
+
+void schrijfP(){
+  vooruit(hoogte);
+  draaiRechts(90);
+  int omtrekHalveCirkel = ((hoogte/2) * pi)/2;
+  int diameterHalveCirkel = hoogte/2;
+  int lengteBocht = omtrekHalveCirkel / 10;
+
+  for(int i = 0; i < 11; i++){
+    draaiRechts(18);
+    voorUit(lengteBocht);
+  }
+
+  penOmhoog();
+  draaiLinks(90);
+  voorUit(hoogte/2);
+  draailinks(90);
+  voorUit(breedte);
+}
+
+void schrijfV(){
+    double b = breedte / 2;
+    double h = sqrt(hoogte * hoogte + (b * b));
+    double hoek = 90 - asin(hoogte / h) / pi * 180;
+    voorUit(hoogte);
+    draaiRechts(90);
+    voorUit(breedte);
+    draairechts(90);
+    draaiRechts(hoek);
+    voorUit(h);
+    hoek = 180 - (asin(b / h) / pi * 180 * 2);
+    draaiRechts(hoek);
+    voorUit(h);
+    penOmhoog();
+    draaiRechts(180);
+    voorUit(h);
+    hoek = asin(hoogte / h) / pi * 180;
+    draaiLinks(hoek);
+    voorUit(breedte / 2);
+}

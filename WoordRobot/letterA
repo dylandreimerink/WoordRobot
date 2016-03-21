@@ -1,0 +1,26 @@
+void schrijfA()
+{
+    double b = breedte / 2;
+    double h = sqrt(hoogte * hoogte + (b * b));
+    double hoek = 90 - asin(hoogte / h) / pi * 180;
+    draaiRechts(hoek);
+    voorUit(h);
+    hoek = 180 - (asin(b / h) / pi * 180 * 2);
+    draaiRechts(hoek);
+    voorUit(h);
+    penOmhoog();
+    draaiRechts(180);
+    voorUit(h / 2);
+    hoek = asin(hoogte / h) / pi * 180;
+    draaiLinks(hoek);
+    penNaarBeneden();
+    voorUit(breedte / 2);
+    penOmhoog();
+    draaiRechts(180);
+    voorUit(breedte / 2);
+    draaiRechts(90);
+    voorUit(hoogte / 2);
+    draaiLinks(90);
+    voorUit(breedte / 2);    
+}
+ 

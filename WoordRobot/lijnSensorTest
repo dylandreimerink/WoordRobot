@@ -1,0 +1,22 @@
+/*
+ * Define Analog Pin0 for Sensor 1
+ */
+const int SENSOR_1 = A0;
+
+void setup() 
+{
+  /*
+   * Define pin0 as an INPUT to read data
+   */
+  Serial.begin(9600);
+  pinMode(SENSOR_1, INPUT);
+}
+
+void loop()
+{
+  /*
+   * Print data to Serial
+   */
+  Serial.println(analogRead(SENSOR_1));
+  delay(200);
+}

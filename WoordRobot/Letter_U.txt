@@ -1,0 +1,33 @@
+//Letter U
+
+int AantalGraden = 90; //Kwart Cirkel
+int AantalStappen =5;
+double StraalCirkel = breedteLetters /2; //25mm
+double LengteU = hoogteLetters - StraalCirkel;
+double OmtrekkwartCirkel = (breedteLetter * pi) / 4; // 39.26990817mm
+double LengteRijden = OmtrekkwartCirkel / breedteLetters * 10; //7.853981634mm
+double GradenDraaien = AantalGraden / AantalStappen; // 18 graden
+
+//Pen moet omhoog zijn
+penOmhoog();
+voorUit(hoogteLetters); // Positie innemen
+draaiRechts(180);
+penNaarBeneden();
+voorUit(LengteU);
+
+for(int i=0; i<AantalStappen; i++)
+{
+draaiLinks(GradenDraaien);
+voorUit(LengteRijden);
+} 
+for(int i=0; i<AantalStappen; i++)
+{
+draaiLinks(GradenDraaien);
+voorUit(LengteRijden);
+}
+
+voorUit(LengteU);
+penOmhoog();
+draaiLinks(180);
+voorUit(hoogteLetters);
+

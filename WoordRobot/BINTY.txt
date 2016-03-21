@@ -1,0 +1,120 @@
+void schrijfB(){
+  voorUit(hoogte);
+  draaiRechts(90);
+  int omtrekHalveCirkel = ((hoogte/2) * pi)/2;
+  int diameterHalveCirkel = hoogte/2;
+  int lengteBocht = omtrekHalveCirkel / 10;
+
+  for(int i = 0; i < 10; i++){
+    draaiRechts(18);
+    voorUit(lengteBocht);
+  }
+  draaiLinks(180);
+  for(int i = 0; i < 10; i++){
+    draaiRechts(18);
+    voorUit(lengteBocht);
+  }
+  penOmhoog();
+  draaiLinks(180);
+  voorUit(breedte);
+  draaiRechts(90);
+}
+
+void schrijfI(){
+  double b = breedte/2;
+  double c = breedte/4;
+  draaiRechts(90);
+  penNaarBeneden();
+  voorUit(b);
+  achterUit(c);
+  draaiLinks(90);
+  voorUit(hoogte);
+  draaiLinks(90);
+  voorUit(c);
+  achterUit(b);
+  penOmhoog();
+  draaiLinks(90);
+  voorUit(hoogte);
+  draaiLinks(90);
+  
+}
+
+void schrijfT(){
+  penOmhoog();	
+  double b = breedte/2;
+  draaiRechts(90);
+  voorUit(breedte);
+  draaiLinks(90);
+  voorUit(hoogte);
+  draaiLinks(90);
+  voorUit(b);
+  achterUit(breedte);
+  penOmhoog();
+  draaiLinks(90);
+  voorUit(hoogte);
+}
+
+void schrijfN(){
+  double afstand = sqrt(hoogte*hoogte + breedte);// de afstand van de middelste poot dmv pythagoras
+  double h = atan(breedte/hoogte); //hoek ten opzichte van de Npoot
+  double hoek = 180 - h;
+  Serial.println(h);
+  draaiLinks(90);
+  voorUit(hoogte);
+  draaiRechts(hoek);
+  voorUit(afstand);
+  draaiLinks(hoek);
+  voorUit(hoogte);
+  penOmhoog();
+  achterUit(hoogte);
+  draaiRechts(90);
+  
+}
+
+void schrijfY(){
+  double b = breedte/2
+  double h = hoogte/2;
+  double hoek = atan(h/b) // hoek van de Yarm ten opzichte van de Ypoot
+  double rHoek = hoek + 90; // grote hoek vanaf Ypoot naar Yarm
+  double vHoek = 180-(hoek*2); // hoek vanaf Yarm naar Yarm
+  double afstand = sqrt(h*h + b); // lengte van de armen van de Y
+  Serial.println(hoek);
+  voorUit(b);
+  draaiLinks(90);
+  voorUit(h);
+  draaiLinks(rHoek);
+  voorUit(afstand);
+  achterUit(afstand);
+  draaiRechts(vHoek);
+  achterUit(afstand);
+  penOmhoog();
+  draaiRechts(hoek);
+  voorUit(hoogte);
+  draaiLinks(90);
+}
+
+void schrijfP(){
+  double b = breedte/4;
+  double bD = b*3;
+  double h = hoogte/4;
+  double afstand = sqrt(h*h+b);
+  voorUit(hoogte);
+  draaiRechts(90);
+  voorUit(bD);
+  draaiRechts(45);
+  voorUit(afstand);
+  draaiRechts(135);
+  voorUit(h);
+  draaiRechts(45);
+  voorUit(afstand);
+  draaiRechts(135);
+  voorUit(bD);
+  penOmhoog();
+  achterUit(breedte);
+  draaiLinks(90);
+  voorUit(h);
+  
+}
+
+
+

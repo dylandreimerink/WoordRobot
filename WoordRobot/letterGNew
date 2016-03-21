@@ -1,0 +1,33 @@
+void schrijfG(){
+    int AantalGraden = 90; // Kwart Cirkel
+    int AantalStappen = 5;
+    double OmtrekKwartCirkel = (hoogte * pi) / 4; //78.53981634 mm
+    double LengteRijden = OmtrekKwartCirkel / breedteLetters * 10; //15,70796327 mm
+    double GradenDraaien = AantalGraden / AantalStappen; // 18 Graden
+
+    penOmhoog;
+    //Pen moet omhoog zijn
+    draaiRechts(90);
+    voorUit(breedteLetters);
+    draaiLinks(90); //Robot neemt positie in voor het schrijven
+    voorUit(hoogteLetters);
+    draaiLinks(90);
+    //Pen gaat naar Beneden
+    penNaarBeneden();
+
+    for(int i=0; i<AantalStappen; i++)
+    {
+        draaiLinks(GradenDraaien);
+        voorUit(LengteRijden);
+    }
+    for(int i=0; i<AantalStappen; i++)
+    {
+        draaiLinks(GradenDraaien);
+        voorUit(LengteRijden);
+    }
+
+    draaiLinks(90);
+    voorUit(hoogte / 2);
+    draaiLinks(90);
+    voorUit(breedte / 2);
+} 
