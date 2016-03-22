@@ -2,9 +2,9 @@
 #include <math.h>
 
 const double pi = 3.14159265359;
-const double tijdEenRondjeMaxSnelheid = 2000; //miliseconden    dit getal is nog niet goed!
+const double tijdEenRondjeMaxSnelheid = 2200; //miliseconden    dit getal is nog niet goed!
 const double diameterWiel = 30.4; //mm
-const double afstandStiftWiel = 69.3; //mm                        dit getal is nog niet goed!
+const double afstandStiftWiel = 68; //mm                        dit getal is nog niet goed!
 const double hoogteLetters = 100; //mm
 const double breedteLetters = 50; //mm
 const double afwijkingRechts = 67.8;
@@ -72,7 +72,7 @@ void setup() {
 
 void loop(){
   penOmhoog();
-  zoekBeginPunt();
+//  zoekBeginPunt();
   voorUitMetDisplay(100, 1);
   penNaarBeneden();
   schrijfA();
@@ -95,7 +95,7 @@ void loop(){
   draaiLinks(90);
   voorUit(20);
   zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
+  voorUitMetDisplay(100, 3);
   penNaarBeneden();
   schrijfP();
   
@@ -106,7 +106,7 @@ void loop(){
   draaiLinks(90);
   voorUit(20);
   zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
+  voorUitMetDisplay(100, 4);
   penNaarBeneden();
   schrijfE();
   
@@ -117,10 +117,10 @@ void loop(){
   draaiLinks(90);
   voorUit(20);
   zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
+  voorUitMetDisplay(100, 5);
   penNaarBeneden();
   schrijfL();
-/*  
+
   penOmhoog();
   zetRecht();
   draaiLinks(90);
@@ -128,9 +128,9 @@ void loop(){
   draaiLinks(90);
   voorUit(20);
   zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
+  voorUitMetDisplay(100, 6);
   penNaarBeneden();
-  schrijfT();
+  schrijfF();
   
   penOmhoog();
   zetRecht();
@@ -139,7 +139,18 @@ void loop(){
   draaiLinks(90);
   voorUit(20);
   zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
+  voorUitMetDisplay(100, 7);
+  penNaarBeneden();
+  schrijfL();
+
+  penOmhoog();
+  zetRecht();
+  draaiLinks(90);
+  voorUit(40);
+  draaiLinks(90);
+  voorUit(20);
+  zetRechtAchterUit();
+  voorUitMetDisplay(100, 8);
   penNaarBeneden();
   schrijfA();
 
@@ -150,32 +161,10 @@ void loop(){
   draaiLinks(90);
   voorUit(20);
   zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
+  voorUitMetDisplay(100, 9);
   penNaarBeneden();
-  schrijfA();
+  schrijfP();
 
-  penOmhoog();
-  zetRecht();
-  draaiLinks(90);
-  voorUit(40);
-  draaiLinks(90);
-  voorUit(20);
-  zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
-  penNaarBeneden();
-  schrijfR();
-
-  penOmhoog();
-  zetRecht();
-  draaiLinks(90);
-  voorUit(40);
-  draaiLinks(90);
-  voorUit(20);
-  zetRechtAchterUit();
-  voorUitMetDisplay(100, 2);
-  penNaarBeneden();
-  schrijfT);
-  */  
   delay(1000000);
 
 }

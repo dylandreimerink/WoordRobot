@@ -103,7 +103,7 @@ void penNaarBeneden(){
     digitalWrite(12, HIGH);
     digitalWrite(13, LOW);
     analogWrite(11, 255);
-    delay(106);
+    delay(99);
     digitalWrite(12, LOW);
     digitalWrite(13, HIGH);
     analogWrite(11, 255);
@@ -380,7 +380,7 @@ void voorUitMetDisplay(double afstand, int getal){
 
 void zoekEindPunt(){
  zetRecht();
- draaLinks(90);
+ draaiLinks(90);
  zetRecht();
  draaiRechts(90);
  zetRecht();
