@@ -103,7 +103,7 @@ void penNaarBeneden(){
     digitalWrite(12, HIGH);
     digitalWrite(13, LOW);
     analogWrite(11, 255);
-    delay(99);
+    delay(95);
     digitalWrite(12, LOW);
     digitalWrite(13, HIGH);
     analogWrite(11, 255);

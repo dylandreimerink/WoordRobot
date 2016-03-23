@@ -291,6 +291,7 @@ void schrijfL(){
   draaiLinks(90);
   voorUit(breedte);
   penOmhoog();
+  draaiRechts(90);
 }
 
 void schrijfN(){
